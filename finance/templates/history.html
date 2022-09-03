@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+<style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #DDD;
+    }
+
+    tr:hover {background-color: #D6EEEE;}
+</style>
+
+<div>
+<h1>Transaction History</h1>
+
+{% if transactions %}
+<table>
+    <tr>
+      <th>Stock</th>
+      <th>Symbol</th>
+      <th>Shares</th>
+      <th>Share Price</th>
+      <th>Transaction Type</th>
+      <th>Timestamp</th>
+    </tr>
+    {% for transaction in transactions %}
+    <tr>
+      <td>{{ transaction.stockname }}</td>
+      <td>{{ transaction.stocksymbol }}</td>
+      <td>{{ transaction.shares }}</td>
+      <td>{{ transaction.price }}</td>
+      <td>{{ transaction.type }}</td>
+      <td>{{ transaction.timestamp }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endif %}
+
+{% endblock %}

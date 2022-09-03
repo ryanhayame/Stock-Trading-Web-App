@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add Cash
+{% endblock %}
+
+{% block main %}
+    <form action="/cash" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="amount" name="amount" placeholder="$ Transfer Amount" type="number">
+        </div>
+        <div class="mb-3">
+            <input autocomplete="off" class="form-control mx-auto w-auto" id="card" name="card" placeholder="Credit Card Number" type="number">
+        </div>
+        <button class="btn btn-primary" type="submit">Add Cash</button>
+        <br>
+        <br>
+        <p style="font-size:1em">Only American Express, Mastercard, and Visa</p>
+        <div>
+        <h2>Current Balance: {{ cash }}</h>
+        </div>
+    </form>
+
+    {% if balance %}
+    <style>
+        mark {
+          background-color: lightgreen;
+          color: black;
+        }
+    </style>
+    <br>
+    <br>
+    <p><mark>Transfer Successful!</mark></p>
+    <p>{{ amount }} from {{ cardtype }} Credit Card</p>
+    <p>New Cash Balance: {{ balance }}</p>
+    {% endif %}
+
+{% endblock %}

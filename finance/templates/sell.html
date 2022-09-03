@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sell
+{% endblock %}
+
+{% block main %}
+    <form action="/sell" method="post">
+        <div>
+            <select name="symbol" required>
+                <option disabled selected value>Choose Stock</option>
+                {% for portfoli in portfolio %}
+                    <option>{{ portfoli.stocksymbol }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <br>
+        <div class="mb-3">
+            <input autocomplete="off" class="form-control mx-auto w-auto" id="shares" name="shares" placeholder="Number of Shares" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Sell Shares</button>
+    </form>
+
+    {% if balance %}
+    <style>
+        mark {
+          background-color: lightgreen;
+          color: black;
+        }
+    </style>
+    <br>
+    <br>
+    <p><mark>Sale Successful!</mark></p>
+    <p>Shares: {{ shares }}</p>
+    <p>Stock Price: {{ stockprice }}</p>
+    <p>Total Sale: {{ totalprice }}</p>
+    <p>New Cash Balance: {{ balance }}</p>
+    {% endif %}
+
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+<style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #DDD;
+    }
+
+    tr:hover {background-color: #D6EEEE;}
+</style>
+
+<div>
+<h1>Your Portfolio</h1>
+
+{% if portfolio %}
+<table>
+    <tr>
+      <th>Stock</th>
+      <th>Symbol</th>
+      <th>Shares</th>
+      <th>Current Share Price</th>
+      <th>Total Value</th>
+    </tr> 
+    {% for tabl in table %}
+    <tr>
+      <td>{{ tabl.name }}</td>
+      <td>{{ tabl.symbol }}</td>
+      <td>{{ tabl.shares }}</td>
+      <td>{{ tabl.price }}</td>
+      <td>{{ tabl.value }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endif %}
+
+<table>
+    <tr>
+        <th>Cash Balance: {{ balance }} <button><a style="text-decoration:none" href="/cash">Add Cash</a></button></th>
+        <th>Portfolio Value: {{ value }}</th>
+        <th>Grand Total: {{ total }}</th>
+    </tr>
+</table>
+</div>
+
+{% endblock %}
