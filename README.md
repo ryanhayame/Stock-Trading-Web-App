@@ -7,4 +7,4 @@
 #### - Utilizes SQL database to store all user account and portfolio data
 
 ## Screenshots
-![alt text](/Stock Project Screenshots/Screen Shot 2022-10-13 at 5.39.07 PM.png)
+![](Stock%20Project%20Screenshots/Screen%20Shot%202022-10-13%20at%205.39.07%20PM.png)
