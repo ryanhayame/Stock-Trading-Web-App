@@ -8,25 +8,25 @@
 
 ## Screenshots
 ![](/screenshots/1.png)
-** Setting up using flask and API key
+Setting up using flask and API key
 
 ![](/screenshots/register.png)
-** Registration page
+Registration page
 
 ![](/screenshots/login.png)
-** Login page
+Login page
 
 ![](/screenshots/add-cash.png)
-** Page to add cash using only valid credit cards
+Page to add cash using only valid credit cards
 
 ![](/screenshots/buy.png)
-** Page to buy stocks
+Page to buy stocks
 
 ![](/screenshots/sell.png)
-** Page to sell owned stocks
+Page to sell owned stocks
 
 ![](/screenshots/history.png)
-** Transaction history table
+Transaction history table
 
 ![](/screenshots/portfolio.png)
-** Homepage and overall portfolio data
+Homepage and overall portfolio data
