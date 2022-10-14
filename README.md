@@ -7,4 +7,26 @@
 #### - Utilizes SQL database to store all user account and portfolio data
 
 ## Screenshots
-![](Stock%20Project%20Screenshots/Screen%20Shot%202022-10-13%20at%205.39.07%20PM.png)
+![](/screenshots/1.png)
+** Setting up using flask and API key
+
+![](/screenshots/register.png)
+** Registration page
+
+![](/screenshots/login.png)
+** Login page
+
+![](/screenshots/add-cash.png)
+** Page to add cash using only valid credit cards
+
+![](/screenshots/buy.png)
+** Page to buy stocks
+
+![](/screenshots/sell.png)
+** Page to sell owned stocks
+
+![](/screenshots/history.png)
+** Transaction history table
+
+![](/screenshots/portfolio.png)
+** Homepage and overall portfolio data
