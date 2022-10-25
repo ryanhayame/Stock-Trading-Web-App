@@ -1,5 +1,5 @@
-# Stock-Trading-Website
-## Stock trading website created with HTML, CSS, Javascript, Python, Flask, SQL, and the IEX Cloud API
+# Stock-Trading-Web-App
+## Stock trading web application created with HTML, CSS, Javascript, Python, Flask, SQL, and the IEX Cloud API
 #### - Users register for an account using username and password, which they can then use to log in
 #### - Allows user to buy, sell, and quote stocks using real time data from IEX Cloud
 #### - Tables to view user transaction history and current portfolio
