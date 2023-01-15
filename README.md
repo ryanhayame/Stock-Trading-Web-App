@@ -1,5 +1,5 @@
 # Stock-Trading-Web-App
-## Stock trading web application created with HTML, CSS, Javascript, Python, Flask, SQL, and the IEX Cloud API (a REST API)
+## A stock trading web application that pulls real-time financial data from the IEX Cloud API (a REST API)
 
 ## Features:
 - Users register for an account using username and password, which they can then use to log in
@@ -34,4 +34,4 @@
 ![](/screenshots/portfolio.png)
 
 ## Tech Stack:
-HTML, CSS, Python, Flask, and SQLite
+HTML, CSS, JavaScript, Python, Flask, and SQL
