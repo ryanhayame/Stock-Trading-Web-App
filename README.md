@@ -9,9 +9,6 @@
 - Utilizes SQL database to store all user account and portfolio data
 
 ## Screenshots
-#### Setting up using flask and API key
-![](/screenshots/1.png)
-
 #### Registration page
 ![](/screenshots/register.png)
 
